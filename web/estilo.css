@@ -1,0 +1,137 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-jun-2016, 2:52:02
+    Author     : sebgv_000
+*/
+
+body{
+    background: black;
+}
+
+
+//Estilo boton
+.boton{
+    background: black;
+    color: yellow;
+    font-size:10px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    border:0px;
+    width:80px;
+    height:19px;
+}
+
+//Estilo cajas de texto
+.cajatexto{
+    border: 1px solid #DBE1EB;
+    font-size: 10px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+}
+
+.cajatexto:focus{
+    color: #2E3133;
+    border-color: #FBFFAD;
+}
+
+//Estilo select
+select{
+	background: #eee url(arrow.png);
+	background-position: 280px center;
+    background-repeat: no-repeat;
+   	padding: 10px;
+   	font-size: 16px;
+   	border: 0;
+   	border-radius: 3px;
+   -webkit-appearance: none;
+   -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+select:hover{
+	background-color: #ddd;
+}
+//Estilo tablas
+table, table td, table tr {
+	padding:0px;
+	border-spacing: 0px;
+}
+
+table {
+	border:1px black solid;
+	border-radius:5px;
+	min-width:400px;
+	font-family: Helvetica,Arial;
+}
+
+table td {
+	padding:6px;
+}
+
+table tr:first-child td:first-child {
+	border-radius:5px 0px 0px 0px;
+}
+
+table tr:first-child td:last-child {
+	border-radius:0px 5px 0px 0px;
+}
+
+table tr:last-child td:first-child {
+	border-radius:0px 0px 0px 5px;
+}
+
+table tr:last-child td:last-child {
+	border-radius:0px 0px 5px 0px;
+}
+
+table td:not(:last-child) {
+	border-right:1px #666 solid;
+}
+
+
+table tr:nth-child(2n) {
+	background: yellow;
+}
+
+table tr:nth-child(2n+1){
+	background: black;
+        color:yellow;
+}
+
+table.header tr:not(:first-child):hover, table:not(.header) tr:hover {
+	background:gray;
+}
+
+table:not(.header) tr {
+	text-align: left;
+}
+
+table.header tr:first-child {
+	font-weight: bold;
+	color:#fff;
+	background-color: #444;
+	border-bottom:1px #000 solid;
+}
+
+table.header tr:nth-child(n+2) {
+	text-align: right;
+}
+
